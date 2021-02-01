@@ -1,0 +1,207 @@
+.cc-window {
+  height: auto !important;
+  max-height: 95vh;
+  width: auto !important;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 16px !important;
+  box-shadow: 0 30px 60px 0 rgba(0, 11, 40, 0.14);
+  max-width: 820px;
+  margin: 16px;
+}
+
+.cc-banner,
+.cc-floating {
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  border-radius: 6px;
+  line-height: 1.7;
+  left: auto !important;
+}
+
+a.cc-link {
+  color: #0052cc;
+  text-decoration: none !important;
+}
+
+.cc-btn {
+  min-height: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-style: normal;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  max-width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 6px;
+  margin: 0;
+  text-decoration: none;
+  outline: none !important;
+  cursor: pointer;
+  width: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  -webkit-appearance: none;
+  padding: 0 16px;
+  color: white;
+  background-color: #0052cc;
+  border: 1px solid #0052cc;
+  box-shadow: 0 0 0 1px white;
+  transition-property: background-color, border-color, box-shadow, color;
+  transition-duration: 0.28s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cc-btn:hover {
+  background-color: #004ab8;
+  border-color: #004ab8;
+}
+
+.cc-btn.cc-customize {
+  color: #0052cc;
+  background-color: white;
+  border-color: #0052cc;
+}
+
+.cc-btn.cc-customize:hover {
+  background-color: #e6eefa;
+}
+
+.cc-customize-content ul {
+  margin: 0;
+}
+
+.cc-customize-content .cc-customize-categories label {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  cursor: pointer;
+}
+
+.cc-customize-content .cc-customize-categories .cc-readmore {
+  font-size: 14px;
+  font-weight: normal;
+  padding-left: 8px;
+}
+
+.cc-customize-content input[type="checkbox"] {
+  width: 20px;
+  min-width: 20px;
+  max-width: 20px;
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  flex-shrink: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  outline: none;
+  content: none;
+  box-sizing: border-box;
+  vertical-align: middle;
+  position: relative;
+  border: none;
+}
+
+.cc-customize-content input[type="checkbox"]::before {
+  width: 20px;
+  min-width: 20px;
+  max-width: 20px;
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  flex-shrink: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  border: 1px solid #d3d3d3;
+  border-radius: 6px;
+}
+
+.cc-customize-content input[type="checkbox"]:checked::before {
+  width: 20px;
+  min-width: 20px;
+  max-width: 20px;
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  flex-shrink: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1e80ef;
+  border: none;
+}
+
+.cc-customize-content input[type="checkbox"]:checked::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+.cc-customize-content input[type="checkbox"]:disabled::before {
+  background-color: #c4c4c4;
+}
+
+.cc-customize-content input[type="checkbox"]:disabled::after {
+  border-color: #f4f5f7;
+  box-shadow: none;
+}
+
+.cc-customize-content .cc-btn-checkbox {
+  padding-left: 8px;
+  text-transform: none;
+}
+
+.cc-customize-content .cc-more-info {
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+
+body.cc-active {
+  margin-bottom: 180px;
+}
+
+@media (max-width: 576px) {
+  .cc-window {
+    margin: 0;
+  }
+
+  .cc-compliance {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cc-btn {
+    margin: 4px !important;
+  }
+
+  body.cc-active {
+    margin-bottom: 0;
+  }
+}
+
+#cc-revoke-choice:hover {
+  cursor: pointer;
+}
