@@ -57,7 +57,7 @@ class Cookie_Consent_Plugin
         delete_option('cc_domain');
         delete_option('cc_privacy_policy_link');
         delete_option('cc_cookie_policy_link');
-        delete_option('  cc_theme_color');
+        delete_option('cc_theme_color');
     }
 
     function create_plugin_settings()
